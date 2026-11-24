@@ -1,8 +1,8 @@
 module binary(
-    input  wire       w,
-    input  wire       clk,
-    input  wire       reset,
-    output wire       z,
+    input  wire w,
+    input  wire clk,
+    input  wire reset,
+    output wire z,
     output wire [2:0] state
 );
 
