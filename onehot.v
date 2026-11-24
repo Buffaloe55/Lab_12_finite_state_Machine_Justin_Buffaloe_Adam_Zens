@@ -11,7 +11,7 @@ module one_hot(
     wire Anext, Bnext, Cnext, Dnext, Enext;
 
     assign Anext = 1'b0;
-    assign Bnext = ~w & (state[0] | state[1] | state[4]);
+    assign Bnext = ~w & (state[0] | state[3] | state[4]);
     assign Cnext = ~w & (state[1] | state[2]);
     assign Dnext =  w & (state[0] | state[1] | state[2]);
     assign Enext =  w & (state[3] | state[4]);
